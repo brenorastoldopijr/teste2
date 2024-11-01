@@ -1,204 +1,100 @@
+/* Reseta o CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, sans-serif;
 }
 
+/* Layout Geral */
 body {
-    line-height: 1.6;
+    background: #f4f4f4;
     color: #333;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-}
-
-/* Header */
-header {
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
     background: #333;
-    color: #fff;
-    padding: 10px 0;
 }
 
-header .logo h1 {
-    font-size: 2rem;
+.logo {
+    font-size: 1.5em;
+    color: #ffcc00;
 }
 
 nav ul {
     list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: flex;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
-    transition: color 0.3s;
+    margin: 0 10px;
+    font-weight: bold;
 }
 
-nav a:hover {
-    color: #ffcc00;
-}
-
-.cta-button {
-    background: #ffcc00;
-    color: #333;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-/* Hero Section */
 .hero {
-    background: url('hero-background.jpg') no-repeat center center/cover;
-    padding: 60px 0;
-    text-align: center;
+    background: url('hero-background.jpg') center/cover no-repeat;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #fff;
+}
+
+.hero-content {
+    text-align: center;
 }
 
 .hero h2 {
-    font-size: 2.5rem;
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
-/* Services */
-.services {
-    padding: 40px 0;
-    background: #f4f4f4;
-}
-
-.service-cards {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.service-card {
-    background: #fff;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    flex: 1;
-    min-width: 250px;
-}
-
-/* Portfolio */
-.portfolio {
-    padding: 40px 0;
-}
-
-.portfolio-items {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.portfolio-item {
-    background: #fff;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    text-align: center;
-    flex: 1;
-    min-width: 250px;
-}
-
-/* Testimonials */
-.testimonials {
-    padding: 40px 0;
-    background: #f4f4f4;
-}
-
-.testimonial-slider {
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-}
-
-.testimonial {
-    flex: 1;
-    padding: 20px;
-    min-width: 300px;
-}
-
-/* Team Section */
-.team {
-    padding: 40px 0;
-}
-
-.team-members {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.team-member {
-### styles.css (continuação)
-
-```css
-.team-member {
-    background: #fff;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    text-align: center;
-    flex: 1;
-    min-width: 200px;
-}
-
-.team-member img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
-
-/* Footer */
-footer {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer h2 {
-    margin-bottom: 20px;
-}
-
-footer form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: auto;
-}
-
-footer input,
-footer textarea {
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
+.btn {
+    background: #ffcc00;
+    color: #333;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
     border-radius: 5px;
 }
 
-footer .social-links a {
+#services, #portfolio, #team, #contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.service-card, .portfolio-item, .team-member {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.portfolio-items, .team-members {
+    display: flex;
+    gap: 20px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-links a {
     color: #ffcc00;
     margin: 0 5px;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
-    .service-cards,
-    .portfolio-items,
-    .team-members {
+    .portfolio-items, .team-members {
         flex-direction: column;
-        align-items: center;
     }
 }
