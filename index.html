@@ -1,85 +1,145 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agência Digital Inovadora</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <title>Agência de Marketing Digital - Nome da Agência</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Cabeçalho -->
+    <!-- Header -->
     <header>
-        <div class="logo">Agência Digital</div>
-        <nav>
-            <a href="#services">Serviços</a>
-            <a href="#cases">Cases de Sucesso</a>
-            <a href="#team">Equipe</a>
-            <a href="#contact">Contato</a>
-        </nav>
+        <div class="container">
+            <div class="logo">
+                <h1>Nome da Agência</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#clients">Clientes</a></li>
+                    <li><a href="#team">Equipe</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="cta-button">Fale Conosco</a>
+        </div>
     </header>
 
-    <!-- Seção Hero -->
-    <section id="hero">
-        <h1>Transforme sua Presença Digital</h1>
-        <p>Estratégias de marketing digital personalizadas para o crescimento da sua empresa.</p>
-        <button onclick="window.location.href='#contact'">Entre em Contato</button>
-    </section>
-
-    <!-- Seção Serviços -->
-    <section id="services">
-        <h2>Nossos Serviços</h2>
-        <div class="service-card">
-            <h3>Gestão de Mídias Sociais</h3>
-            <p>Criamos conteúdo envolvente e aumentamos seu alcance.</p>
-        </div>
-        <div class="service-card">
-            <h3>Gestão de Tráfego Pago</h3>
-            <p>Campanhas que geram resultados.</p>
-        </div>
-        <div class="service-card">
-            <h3>SEO</h3>
-            <p>Melhore seu ranqueamento nos motores de busca.</p>
+    <!-- Banner de Destaque -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <h2>Impulsione seu negócio com estratégias digitais inovadoras</h2>
+            <p>Especialistas em Marketing Digital focados em resultados</p>
+            <a href="#services" class="cta-button">Nossos Serviços</a>
         </div>
     </section>
 
-    <!-- Seção Cases -->
-    <section id="cases">
-        <h2>Cases de Sucesso</h2>
-        <div class="case">
-            <h3>Case 1: Cliente X</h3>
-            <p>Resultado incrível na campanha de redes sociais.</p>
-        </div>
-        <div class="case">
-            <h3>Case 2: Cliente Y</h3>
-            <p>ROI de 300% em campanhas pagas.</p>
+    <!-- Seção de Serviços -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <h3>Gestão de Mídias Sociais</h3>
+                    <p>Alcance seu público onde ele está e engaje de forma autêntica.</p>
+                </div>
+                <div class="service-card">
+                    <h3>SEO e Marketing de Conteúdo</h3>
+                    <p>Conquiste melhores posições no Google com conteúdo otimizado.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Tráfego Pago</h3>
+                    <p>Aumente as conversões com anúncios eficazes e otimizados.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Design e Desenvolvimento de Sites</h3>
+                    <p>Sites responsivos e modernos para destacar sua marca online.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Equipe -->
-    <section id="team">
-        <h2>Conheça a Nossa Equipe</h2>
-        <div class="team-member">
-            <img src="imagem1.jpg" alt="Membro 1">
-            <h3>Nome do Membro</h3>
-            <p>Especialista em Mídias Sociais</p>
+    <!-- Portfólio / Projetos em Destaque -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Projetos Recentes</h2>
+            <div class="portfolio-items">
+                <div class="portfolio-item">
+                    <img src="projeto1.jpg" alt="Projeto 1">
+                    <h4>Campanha de Social Media</h4>
+                    <p>Descrição breve do projeto e impacto obtido.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="projeto2.jpg" alt="Projeto 2">
+                    <h4>SEO para E-commerce</h4>
+                    <p>Descrição breve do projeto e impacto obtido.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="projeto3.jpg" alt="Projeto 3">
+                    <h4>Landing Page para Novo Produto</h4>
+                    <p>Descrição breve do projeto e impacto obtido.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Depoimentos -->
-    <section id="testimonials">
-        <h2>O Que Nossos Clientes Dizem</h2>
-        <p>"A melhor experiência com marketing digital que já tive!"</p>
-        <p>"Resultados impressionantes em pouco tempo!"</p>
+    <!-- Seção de Depoimentos -->
+    <section id="clients" class="testimonials">
+        <div class="container">
+            <h2>O que nossos clientes dizem</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <p>“A parceria com a Agência foi essencial para nosso crescimento online.”</p>
+                    <p>- Cliente Satisfeito</p>
+                </div>
+                <div class="testimonial">
+                    <p>“Excelente atendimento e resultados incríveis.”</p>
+                    <p>- Outro Cliente</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2024 Agência Digital. Todos os direitos reservados.</p>
-        <div class="social-links">
-            <a href="#">Instagram</a>
-            <a href="#">LinkedIn</a>
+    <!-- Seção Equipe -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2>Nossa Equipe</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="equipe1.jpg" alt="Membro da Equipe 1">
+                    <h4>Nome do Membro</h4>
+                    <p>Especialidade</p>
+                </div>
+                <div class="team-member">
+                    <img src="equipe2.jpg" alt="Membro da Equipe 2">
+                    <h4>Nome do Membro</h4>
+                    <p>Especialidade</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form>
+                <input type="text" name="name" placeholder="Nome" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Mensagem" required></textarea>
+                <button type="submit" class="cta-button">Enviar Mensagem</button>
+            </form>
+            <p>© 2024 Nome da Agência. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">LinkedIn</a>
+            </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
